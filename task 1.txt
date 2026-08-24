@@ -1,8 +1,0 @@
--------- create prompt engneer by chat GPT ----------
-* link chat ==> https://chatgpt.com/share/6a8a42e4-a578-83ea-a780-ba674eb46bda
-
------- task 1 ===> make prompt to  generate  responsive  web page using ai  (write prompt ans use any technique )
-
-* link task &  web page ===> https://manus.im/share/WJncsaUnXnoKhfLbyaRJSj 
-* my site ===> https://pulseflow-mqranvp9.manus.space
-
