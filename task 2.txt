@@ -1,8 +1,0 @@
--------- create prompt engneer by chat GPT ----------
-* link chat ==> https://chatgpt.com/share/6a8a42e4-a578-83ea-a780-ba674eb46bda
-
---------- task 2 ===> 2-Bulid Plan for trip
-out put  of this plan : presentation 
-technique that u use in prompt + prompt 
-
-link create a pptx & trip ==> https://manus.im/share/1scq36fX5ioB61bHCN7Zom
