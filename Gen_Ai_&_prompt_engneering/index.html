@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Portfolio of Abdullah Gad, a Cyber Security Engineer and Full-Stack Developer building secure digital systems.">
+	<title> Abdullah Gad | Cyber Security Engineer & Full-Stack Developer</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script>
+		tailwind.config = {
+			theme: {
+				extend: {
+					fontFamily: { sans: ['DM Sans', 'sans-serif'], display: ['Space Grotesk', 'sans-serif'] },
+					colors: { ink: '#08111f', paper: '#f4f8fb', lime: '#7cf2c3', cyan: '#6bd5ff', violet: '#a78bfa' }
+				}
+			}
+		};
+	</script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<script src="https://unpkg.com/lucide@latest"></script>
+	<style>
+		html { scroll-behavior: smooth; }
+		body { background: #07101d; background-image: radial-gradient(circle at 12% 18%, rgba(107,213,255,.08), transparent 26rem), radial-gradient(circle at 85% 72%, rgba(124,242,195,.06), transparent 24rem); }
+		.grid-pattern { background-image: linear-gradient(rgba(107,213,255,.07) 1px, transparent 1px), linear-gradient(90deg, rgba(124,242,195,.055) 1px, transparent 1px); background-size: 42px 42px; }
+		.noise { background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.18'/%3E%3C/svg%3E"); }
+		.reveal { animation: rise .7s both; }
+		.delay-1 { animation-delay: .12s; } .delay-2 { animation-delay: .22s; } .delay-3 { animation-delay: .32s; }
+		@keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+		.project-card:hover .project-arrow { transform: translate(4px, -4px); }
+		.project-arrow { transition: transform .25s ease; }
+			.project-card { min-height: 330px; }
+			::selection { background: #7cf2c3; color: #08111f; }
+			input:focus, textarea:focus { box-shadow: 0 2px 0 rgba(124,242,195,.8); }
+			@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .reveal { animation: none; } }
+	</style>
+</head>
+<body class="font-sans text-paper antialiased selection:bg-lime selection:text-ink">
+	<div class="fixed inset-0 -z-10 grid-pattern opacity-70"></div>
+	<div class="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_80%_0%,rgba(107,213,255,.13),transparent_32rem)]"></div>
+
+	<header class="relative z-20 mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-10">
+		<a href="#top" class="font-display text-lg font-semibold tracking-tight"><span class="text-lime">AG</span><span class="ml-2 text-white/50">/ portfolio</span></a>
+		<button id="menu-button" class="rounded-lg border border-white/15 p-2 text-white/80 md:hidden" aria-label="Toggle navigation" aria-expanded="false"><i data-lucide="menu" class="h-5 w-5"></i></button>
+		<nav id="nav" class="absolute left-6 right-6 top-20 hidden rounded-xl border border-white/10 bg-ink/95 p-4 shadow-2xl backdrop-blur md:static md:block md:bg-transparent md:p-0 md:shadow-none">
+			<div class="flex flex-col gap-4 text-sm text-white/60 md:flex-row md:items-center md:gap-8">
+				<a class="transition hover:text-lime" href="#about">About</a><a class="transition hover:text-lime" href="#skills">Skills</a><a class="transition hover:text-lime" href="#work">Selected work</a><a class="transition hover:text-lime" href="#contact">Contact</a>
+			</div>
+		</nav>
+		<a href="#contact" class="hidden items-center gap-2 rounded-full border border-lime/60 px-4 py-2 text-sm font-semibold text-lime transition hover:bg-lime hover:text-ink md:flex">Let's talk <i data-lucide="arrow-up-right" class="h-4 w-4"></i></a>
+	</header>
+
+	<main id="top">
+		<section class="mx-auto grid max-w-7xl gap-12 px-6 pb-24 pt-16 lg:grid-cols-[1.2fr_.8fr] lg:px-10 lg:pb-32 lg:pt-24">
+			<div class="max-w-4xl">
+				<p class="reveal mb-6 flex items-center gap-3 text-sm font-semibold uppercase tracking-[.2em] text-lime"><span class="h-px w-10 bg-lime"></span> Available for meaningful builds <span class="rounded-full border border-lime/30 px-2 py-1 text-[10px] tracking-[.14em] text-lime/80">SECURE BY DESIGN</span></p>
+				<h1 class="reveal delay-1 font-display text-5xl font-semibold leading-[.98] tracking-tight text-white sm:text-7xl lg:text-[6.7rem]">Securing the<br><span class="text-lime">digital edge.</span></h1>
+				<p class="reveal delay-2 mt-8 max-w-xl text-lg leading-relaxed text-white/60">I’m <strong class="font-semibold text-white">Abdullah Gad</strong>, a Cyber Security Engineer and Full-Stack Developer turning complex threats into clear, resilient solutions.</p>
+				<div class="reveal delay-3 mt-10 flex flex-wrap gap-3">
+					<a href="https://github.com/" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 rounded-full bg-lime px-5 py-3 text-sm font-bold text-ink transition hover:-translate-y-1 hover:bg-white"><i data-lucide="github" class="h-4 w-4"></i> GitHub</a>
+					<a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-3 text-sm font-bold text-white transition hover:-translate-y-1 hover:border-cyan hover:text-cyan"><i data-lucide="linkedin" class="h-4 w-4"></i> LinkedIn</a>
+					<a href="#contact" class="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-3 text-sm font-bold text-white transition hover:-translate-y-1 hover:border-cyan hover:text-cyan"><i data-lucide="mail" class="h-4 w-4"></i> Contact me</a>
+				</div>
+			</div>
+			<div class="relative flex items-end lg:justify-end">
+				<div class="noise absolute right-0 top-4 h-56 w-56 rounded-full bg-cyan/80 mix-blend-screen blur-[1px] lg:h-72 lg:w-72"></div>
+				<div class="relative w-full max-w-sm border-l border-t border-white/20 p-6 pt-20 backdrop-blur-sm">
+					<p class="text-xs uppercase tracking-[.2em] text-white/40">Currently studying</p><p class="mt-3 font-display text-2xl font-semibold text-white">Cyber Security<br><span class="text-cyan">& Digital Resilience</span></p>
+					<div class="mt-12 flex items-center justify-between border-t border-white/15 pt-4 text-xs text-white/45"><span>CYBER LAB / Cairo, Egypt</span><span>01 — 04</span></div>
+				</div>
+			</div>
+		</section>
+
+		<section id="about" class="border-y border-white/10 bg-paper py-20 text-ink lg:py-28">
+			<div class="mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-[.7fr_1.3fr] lg:px-10">
+				<div><p class="text-sm font-bold uppercase tracking-[.2em] text-emerald-700">01 / About me</p><h2 class="mt-5 font-display text-4xl font-semibold tracking-tight sm:text-5xl">Alert by nature.<br>Precise by practice.</h2></div>
+				<div class="max-w-2xl text-lg leading-relaxed text-ink/70"><p>I’m a Cyber Security specialist with a practical, threat-first mindset. My work sits at the intersection of security operations, secure software development, and digital forensics.</p><p class="mt-6">I enjoy turning security challenges into clear action plans, collaborating with ambitious teams, and making digital experiences safer without making them harder to use.</p><div class="mt-10 flex gap-10 border-t border-ink/15 pt-5 text-sm"><span><strong class="block font-display text-2xl text-ink">SOC</strong> operations</span><span><strong class="block font-display text-2xl text-ink">Secure</strong> systems</span><span><strong class="block font-display text-2xl text-ink">∞</strong> curiosity</span></div></div>
+			</div>
+		</section>
+
+		<section id="skills" class="mx-auto max-w-7xl px-6 py-20 lg:px-10 lg:py-28"><div class="mb-12 flex items-end justify-between"><div><p class="text-sm font-bold uppercase tracking-[.2em] text-lime">02 / The toolkit</p><h2 class="mt-4 font-display text-4xl font-semibold sm:text-5xl">Tools I defend with.</h2></div><i data-lucide="asterisk" class="hidden h-10 w-10 text-cyan sm:block"></i></div><div class="grid gap-px overflow-hidden border border-white/10 bg-white/10 md:grid-cols-3">
+			<div class="bg-ink p-7 transition hover:bg-white/[.06]"><i data-lucide="shield-check" class="h-7 w-7 text-lime"></i><h3 class="mt-10 font-display text-xl font-semibold">Security Operations</h3><div class="mt-5 flex flex-wrap gap-2"><span class="skill">SIEM</span><span class="skill">Threat Hunting</span><span class="skill">Incident Response</span><span class="skill">Log Analysis</span><span class="skill">OSINT</span></div></div>
+			<div class="bg-ink p-7 transition hover:bg-white/[.06]"><i data-lucide="scan-line" class="h-7 w-7 text-cyan"></i><h3 class="mt-10 font-display text-xl font-semibold">Offensive Security</h3><div class="mt-5 flex flex-wrap gap-2"><span class="skill">Web Pentesting</span><span class="skill">Burp Suite</span><span class="skill">Nmap</span><span class="skill">OWASP</span><span class="skill">Kali Linux</span></div></div>
+			<div class="bg-ink p-7 transition hover:bg-white/[.06]"><i data-lucide="lock-keyhole" class="h-7 w-7 text-lime"></i><h3 class="mt-10 font-display text-xl font-semibold">Secure Engineering</h3><div class="mt-5 flex flex-wrap gap-2"><span class="skill">Python</span><span class="skill">Linux</span><span class="skill">Secure APIs</span><span class="skill">Git / GitHub</span><span class="skill">Cloud Security</span></div></div>
+		</div></section>
+
+		<section id="work" class="bg-[#172027] py-20 lg:py-28"><div class="mx-auto max-w-7xl px-6 lg:px-10"><div class="mb-12 flex flex-col justify-between gap-4 sm:flex-row sm:items-end"><div><p class="text-sm font-bold uppercase tracking-[.2em] text-lime">03 / Selected work</p><h2 class="mt-4 font-display text-4xl font-semibold sm:text-5xl">Ideas, shipped.</h2></div><p class="max-w-xs text-sm leading-relaxed text-white/45">A focused selection of security-minded systems built around real risks, thoughtful interfaces, and measurable resilience.</p></div><div class="grid gap-4 md:grid-cols-2">
+			<article class="project-card group border border-white/10 bg-ink p-7 transition hover:border-lime/60 sm:p-9"><div class="flex justify-between"><span class="text-sm text-white/40">01 — DEFENSIVE SECURITY</span><i data-lucide="arrow-up-right" class="project-arrow h-5 w-5 text-lime"></i></div><h3 class="mt-20 font-display text-2xl font-semibold">Threat Detection<br>Dashboard</h3><p class="mt-4 max-w-md text-sm leading-relaxed text-white/50">A security monitoring interface that surfaces suspicious activity, prioritizes alerts, and helps teams respond faster.</p><div class="mt-8 flex flex-wrap gap-2"><span class="tag">SIEM</span><span class="tag">Threat Intel</span><span class="tag">Python</span></div></article>
+			<article class="project-card group border border-white/10 bg-ink p-7 transition hover:border-cyan/60 sm:p-9"><div class="flex justify-between"><span class="text-sm text-white/40">02 — APPSEC</span><i data-lucide="arrow-up-right" class="project-arrow h-5 w-5 text-cyan"></i></div><h3 class="mt-20 font-display text-2xl font-semibold">Secure Web App<br>Assessment</h3><p class="mt-4 max-w-md text-sm leading-relaxed text-white/50">A practical assessment workflow for discovering vulnerabilities, documenting impact, and guiding secure remediation.</p><div class="mt-8 flex flex-wrap gap-2"><span class="tag">OWASP</span><span class="tag">Burp Suite</span><span class="tag">REST APIs</span></div></article>
+			<article class="project-card group border border-white/10 bg-ink p-7 transition hover:border-lime/60 sm:p-9"><div class="flex justify-between"><span class="text-sm text-white/40">03 — DIGITAL FORENSICS</span><i data-lucide="arrow-up-right" class="project-arrow h-5 w-5 text-lime"></i></div><h3 class="mt-20 font-display text-2xl font-semibold">Incident Response<br>Casebook</h3><p class="mt-4 max-w-md text-sm leading-relaxed text-white/50">A structured case-management concept for preserving evidence, tracking timelines, and communicating incident findings.</p><div class="mt-8 flex flex-wrap gap-2"><span class="tag">Forensics</span><span class="tag">Timeline</span><span class="tag">Evidence</span></div></article>
+			<article class="project-card group border border-white/10 bg-ink p-7 transition hover:border-cyan/60 sm:p-9"><div class="flex justify-between"><span class="text-sm text-white/40">04 — SECURITY AWARENESS</span><i data-lucide="arrow-up-right" class="project-arrow h-5 w-5 text-cyan"></i></div><h3 class="mt-20 font-display text-2xl font-semibold">Human Firewall<br>Awareness Hub</h3><p class="mt-4 max-w-md text-sm leading-relaxed text-white/50">An approachable security-awareness experience designed to make safer digital habits easy to learn and practice.</p><div class="mt-8 flex flex-wrap gap-2"><span class="tag">Phishing</span><span class="tag">Training</span><span class="tag">Security Culture</span></div></article>
+		</div></div></section>
+
+		<section id="contact" class="mx-auto max-w-7xl px-6 py-20 lg:px-10 lg:py-28"><div class="grid gap-14 lg:grid-cols-[.8fr_1.2fr]"><div><p class="text-sm font-bold uppercase tracking-[.2em] text-lime">04 / Start a conversation</p><h2 class="mt-5 font-display text-5xl font-semibold leading-none sm:text-6xl">Have a good<br><span class="text-cyan">problem?</span></h2><p class="mt-7 max-w-sm leading-relaxed text-white/50">Tell me what you’re protecting, what feels exposed, or what you’re curious about. I’m always open to a thoughtful exchange.</p><div class="mt-10 flex gap-5"><a aria-label="GitHub" href="https://github.com/" target="_blank" rel="noreferrer" class="text-white/60 transition hover:text-lime"><i data-lucide="github"></i></a><a aria-label="LinkedIn" href="https://www.linkedin.com/" target="_blank" rel="noreferrer" class="text-white/60 transition hover:text-cyan"><i data-lucide="linkedin"></i></a><a aria-label="Email" href="mailto:abdullah.gad@example.com" class="text-white/60 transition hover:text-lime"><i data-lucide="mail"></i></a></div></div><form id="contact-form" class="border border-white/10 bg-white/[.03] p-6 sm:p-9"><label class="block text-xs font-bold uppercase tracking-[.18em] text-white/45" for="name">Your name</label><input id="name" name="name" required class="mt-3 w-full border-b border-white/20 bg-transparent px-0 py-3 text-white outline-none transition placeholder:text-white/25 focus:border-lime" placeholder="Jane Smith"><label class="mt-8 block text-xs font-bold uppercase tracking-[.18em] text-white/45" for="email">Email address</label><input id="email" name="email" type="email" required class="mt-3 w-full border-b border-white/20 bg-transparent px-0 py-3 text-white outline-none transition placeholder:text-white/25 focus:border-lime" placeholder="jane@company.com"><label class="mt-8 block text-xs font-bold uppercase tracking-[.18em] text-white/45" for="message">A little about the project</label><textarea id="message" name="message" required rows="3" class="mt-3 w-full resize-none border-b border-white/20 bg-transparent px-0 py-3 text-white outline-none transition placeholder:text-white/25 focus:border-lime" placeholder="I have an interesting challenge..."></textarea><button class="mt-9 inline-flex items-center gap-2 rounded-full bg-lime px-6 py-3 text-sm font-bold text-ink transition hover:bg-white" type="submit">Send message <i data-lucide="arrow-up-right" class="h-4 w-4"></i></button><p id="form-status" class="mt-4 hidden text-sm text-cyan" role="status"></p></form></div></section>
+	</main>
+	<footer class="border-t border-white/10 px-6 py-7 text-xs text-white/40 lg:px-10"><div class="mx-auto flex max-w-7xl flex-col justify-between gap-3 sm:flex-row"><span>© <span id="year"></span> Abdullah Gad</span><span>Designed with intent · Built with curiosity · Secured with care</span></div></footer>
+	<style>.skill,.tag{display:inline-flex;border:1px solid rgba(255,255,255,.14);border-radius:9999px;padding:.4rem .65rem;font-size:.75rem;color:rgba(255,255,255,.62)}.tag{color:rgba(255,255,255,.58);background:rgba(255,255,255,.04)}</style>
+	<script>
+		lucide.createIcons();
+		document.getElementById('year').textContent = new Date().getFullYear();
+		const menuButton = document.getElementById('menu-button');
+		const nav = document.getElementById('nav');
+		menuButton.addEventListener('click', () => { const open = nav.classList.toggle('hidden') === false; menuButton.setAttribute('aria-expanded', open); });
+		nav.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => { nav.classList.add('hidden'); menuButton.setAttribute('aria-expanded', 'false'); }));
+		document.getElementById('contact-form').addEventListener('submit', (event) => { event.preventDefault(); const data = new FormData(event.currentTarget); const subject = encodeURIComponent('Portfolio inquiry from ' + data.get('name')); const body = encodeURIComponent(data.get('message') + '\n\nReply to: ' + data.get('email')); window.location.href = 'mailto:abdullah.gad@example.com?subject=' + subject + '&body=' + body; document.getElementById('form-status').textContent = 'Opening your email client...'; document.getElementById('form-status').classList.remove('hidden'); });
+	</script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+CREATE TABLE Sales_Office (
+    Num INT PRIMARY KEY AUTO_INCREMENT,
+    Loc VARCHAR(100),
+    Employee_ID INT UNIQUE
+);
+
+INSERT INTO Sales_Office (Loc)
+VALUES
+('Cairo'),
+('Alex');
+===================================================
+CREATE TABLE Employee (
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    Name VARCHAR(100),
+    Office_Num INT,
+    FOREIGN KEY (Office_Num) REFERENCES Sales_Office(Num)
+);
+
+INSERT INTO Employee (Name, Office_Num)
+VALUES
+('Malak',1),
+('Menna',2);
+===================================================
+ALTER TABLE Sales_Office
+ADD CONSTRAINT FK_Employee
+FOREIGN KEY (Employee_ID)REFERENCES Employee(ID);
+===================================================
+CREATE TABLE Property (
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    Address VARCHAR(100),
+    City VARCHAR(50),
+    State VARCHAR(50),
+    Zip VARCHAR(10),
+    Office_Num INT,
+    FOREIGN KEY (Office_Num)REFERENCES Sales_Office(Num)
+);
+
+INSERT INTO Property
+(Address, City, State, Zip, Office_Num)
+VALUES
+('Cairo','Cairo','Cairo','11511',1),
+('Alex','Alex','Alex','21500',2);
+===================================================
+CREATE TABLE Owner (
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    Name VARCHAR(100)
+);
+
+INSERT INTO Owner (Name)
+VALUES
+('Marwa'),
+('Sara');
+===================================================
+CREATE TABLE Has (
+    Property_ID INT,
+    Owner_ID INT,
+    Percent_Owned DECIMAL(5,2),
+    PRIMARY KEY (Property_ID, Owner_ID),
+    FOREIGN KEY (Property_ID)REFERENCES Property(ID),
+    FOREIGN KEY (Owner_ID)REFERENCES Owner(ID)
+);
+
+INSERT INTO Has
+(Property_ID, Owner_ID, Percent_Owned)
+VALUES
+(1,1,60),
+(1,2,40),
+(2,2,100);
+===================================================

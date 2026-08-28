@@ -1,0 +1,75 @@
+CREATE TABLE Musician (
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    Name VARCHAR(100),
+    Phone VARCHAR(20),
+    Street VARCHAR(100),
+    City VARCHAR(100)
+);
+
+INSERT INTO Musician (Name, Phone, Street, City)
+VALUES
+('Malak', '01234567897', 'mmm', 'Cairo'),
+('Menna', '01987654321', 'xxx', 'Alex');
+
+============================================================================
+CREATE TABLE Album (
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    Title VARCHAR(100),
+    Cr_Date DATE,
+    Musician_ID INT,
+    FOREIGN KEY (Musician_ID) REFERENCES Musician(ID)
+);
+
+INSERT INTO Album (Title, Cr_Date, Musician_ID)
+VALUES
+('tt', '2025-01-10', 1),
+('yy', '2025-06-15', 2);
+============================================================================
+CREATE TABLE Song (
+    Title VARCHAR(100) PRIMARY KEY,
+    Author VARCHAR(100),
+    Album_ID INT,
+    FOREIGN KEY (Album_ID) REFERENCES Album(ID)
+);
+
+INSERT INTO Song (Title, Author, Album_ID)
+VALUES
+('My Song', 'Malak', 1),
+('Happy Day', 'Menna', 2);
+============================================================================
+CREATE TABLE Instrument (
+    Name VARCHAR(100) PRIMARY KEY,
+    `Key` VARCHAR(50)
+);
+
+INSERT INTO Instrument (Name, `Key`)
+VALUES
+('Piano', 'C'),
+('Guitar', 'G');
+============================================================================
+CREATE TABLE Play_Instrument (
+    Musician_ID INT,
+    Instrument_Name VARCHAR(100),
+    PRIMARY KEY (Musician_ID, Instrument_Name),
+    FOREIGN KEY (Musician_ID) REFERENCES Musician(ID),
+    FOREIGN KEY (Instrument_Name) REFERENCES Instrument(Name)
+);
+
+INSERT INTO Play_Instrument (Musician_ID, Instrument_Name)
+VALUES
+(1, 'Piano'),
+(2, 'Guitar');
+============================================================================
+CREATE TABLE Play_Song (
+    Musician_ID INT,
+    Song_Title VARCHAR(100),
+    PRIMARY KEY (Musician_ID, Song_Title),
+    FOREIGN KEY (Musician_ID) REFERENCES Musician(ID),
+    FOREIGN KEY (Song_Title) REFERENCES Song(Title)
+);
+
+INSERT INTO Play_Song (Musician_ID, Song_Title)
+VALUES
+(1, 'My Song'),
+(2, 'Happy Day');
+============================================================================

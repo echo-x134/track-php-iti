@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.chat-shell {
+	background: #f0f2f5;
+}
+
+.chat-history {
+	height: min(60vh, 560px);
+	overflow-y: auto;
+	background: #efeae2;
+	background-image: radial-gradient(#d8d0c5 0.7px, transparent 0.7px);
+	background-size: 14px 14px;
+}
+
+.chat-bubble {
+	max-width: min(78%, 620px);
+	border-radius: 1rem;
+}
+
+.chat-bubble-user {
+	background: #d9fdd3;
+	border-bottom-right-radius: 0.25rem;
+}
+
+.chat-bubble-assistant {
+	background: #ffffff;
+	border-bottom-left-radius: 0.25rem;
+}
+
+.typing-dots span {
+	display: inline-block;
+	width: 0.4rem;
+	height: 0.4rem;
+	margin: 0 0.1rem;
+	border-radius: 50%;
+	background: #6c757d;
+	animation: typing 1.2s infinite ease-in-out;
+}
+
+.typing-dots span:nth-child(2) { animation-delay: 0.15s; }
+.typing-dots span:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes typing {
+	0%, 60%, 100% { transform: translateY(0); opacity: 0.45; }
+	30% { transform: translateY(-0.25rem); opacity: 1; }
+}

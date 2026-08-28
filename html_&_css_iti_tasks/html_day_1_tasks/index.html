@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roast &amp; Co. — Specialty Coffee Roasters</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="main-header">
+      <a href="#" class="brand-identity">
+        <span class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M5 9h11v6a5 5 0 0 1-5 5H10a5 5 0 0 1-5-5V9Z" stroke="currentColor" stroke-width="1.6"/>
+            <path d="M16 10h1.5a2.5 2.5 0 0 1 0 5H16" stroke="currentColor" stroke-width="1.6"/>
+            <path d="M8 6c0-1 .8-1 .8-2S8 3 8 2M11.5 6c0-1 .8-1 .8-2s-.8-1-.8-2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand-typography">
+          <span class="brand-title">Roast &amp; Co.</span>
+          <span class="brand-subtitle">Specialty Coffee Roasters</span>
+        </span>
+      </a>
+
+      <input type="checkbox" id="menu-button" class="menu-checkbox">
+      <label for="menu-button" class="menu-button" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </label>
+
+      <ul class="navigation-list">
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#story">Our Story</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#">Locations</a></li>
+        <li><a href="#shop">Shop</a></li>
+      </ul>
+
+      <div class="header-actions">
+        <span class="action-circle" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        </span>
+        <button class="ui-button ui-button-solid">Order Online</button>
+      </div>
+    </nav>
+
+    <section class="landing-intro">
+      <div class="intro-content">
+        <p class="section-label">Specialty Coffee Roasters</p>
+        <h1 class="intro-heading">
+          Crafted with
+          <span class="heading-highlight">Passion &amp; Precision</span>
+        </h1>
+        <p class="intro-description">
+          From bean to cup, we obsess over every detail. Experience specialty
+          coffee the way it was meant to be — fresh-roasted, expertly brewed,
+          and served with care.
+        </p>
+        <div class="intro-buttons">
+          <button class="ui-button ui-button-solid">View Our Menu</button>
+          <button class="ui-button ui-button-ghost">Order Online</button>
+        </div>
+      </div>
+      <div class="intro-visuals">
+        <span class="decorative-shape shape-gold" aria-hidden="true"></span>
+        <span class="decorative-shape shape-soft" aria-hidden="true"></span>
+        <div class="visual-container">
+          <img
+            src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=900&h=900&fit=crop"
+            alt="Two hands holding coffee cups together"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="catalog-area">
+      <div class="container-box">
+        <div class="area-header">
+            <h2>Our Menu</h2>
+            <p class="area-description">Handcrafted drinks and fresh-baked goods, made with love</p>
+        </div>
+
+        <div class="catalog-category">
+            <div class="category-info">
+                <h3>Espresso Drinks</h3>
+                <p>Crafted with our signature house blend</p>
+            </div>
+            <div class="catalog-layout">
+                <article class="product-item">
+                    <div class="product-thumb">
+                        <img src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?w=200&h=200&fit=crop" alt="Espresso">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-header">
+                            <h4>Espresso</h4>
+                            <span class="cost-display">$3.50</span>
+                        </div>
+                        <p>Rich, bold, and perfectly extracted</p>
+                    </div>
+                </article>
+                <article class="product-item">
+                    <div class="product-thumb">
+                        <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=200&h=200&fit=crop" alt="Cortado">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-header">
+                            <h4>Cortado</h4>
+                            <span class="cost-display">$4.50</span>
+                        </div>
+                        <p>Equal parts espresso and steamed milk</p>
+                    </div>
+                </article>
+                <article class="product-item">
+                    <div class="product-thumb">
+                        <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=200&h=200&fit=crop" alt="Cappuccino">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-header">
+                            <h4>Cappuccino</h4>
+                            <span class="cost-display">$5.00</span>
+                        </div>
+                        <p>Velvety foam with a double shot</p>
+                        <span class="badge badge-trending">Popular</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="catalog-category">
+            <div class="category-info">
+                <h3>Pour Overs</h3>
+                <p>Single-origin beans, brewed to order</p>
+            </div>
+            <div class="catalog-layout">
+                <article class="product-item">
+                    <div class="product-thumb">
+                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=200&h=200&fit=crop" alt="Ethiopian Yirgacheffe">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-header">
+                            <h4>Ethiopian Yirgacheffe</h4>
+                            <span class="cost-display">$6.00</span>
+                        </div>
+                        <p>Floral, citrus, and tea-like</p>
+                        <div class="flavor-profile">
+                            <span class="badge">Bergamot</span><span class="badge">Jasmine</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-item">
+                    <div class="product-thumb">
+                        <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=200&h=200&fit=crop" alt="Colombian Huila">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-header">
+                            <h4>Colombian Huila</h4>
+                            <span class="cost-display">$5.50</span>
+                        </div>
+                        <p>Caramel, red apple, and milk chocolate</p>
+                        <span class="badge badge-trending">Popular</span>
+                        <div class="flavor-profile">
+                            <span class="badge">Caramel</span><span class="badge">Apple</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-item">
+                    <div class="product-thumb">
+                        <img src="https://images.unsplash.com/photo-1507133750040-4a8f57021571?w=200&h=200&fit=crop" alt="Guatemalan Antigua">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-header">
+                            <h4>Guatemalan Antigua</h4>
+                            <span class="cost-display">$5.50</span>
+                        </div>
+                        <p>Smoky, cocoa, and spice</p>
+                        <div class="flavor-profile">
+                            <span class="badge">Cocoa</span><span class="badge">Smoke</span><span class="badge">Spice</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="catalog-category">
+            <div class="category-info">
+                <h3>Cold Drinks</h3>
+                <p>Refreshing and smooth</p>
+            </div>
+            <div class="catalog-layout">
+                <article class="product-item">
+                    <div class="product-thumb">
+                        <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=200&h=200&fit=crop" alt="Cold Brew">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-header">
+                            <h4>Cold Brew</h4>
+                            <span class="cost-display">$5.00</span>
+                        </div>
+                        <p>18-hour steeped perfection</p>
+                        <span class="badge badge-trending">Popular</span>
+                    </div>
+                </article>
+                <article class="product-item">
+                    <div class="product-thumb">
+                        <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=200&h=200&fit=crop" alt="Iced Latte">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-header">
+                            <h4>Iced Latte</h4>
+                            <span class="cost-display">$5.50</span>
+                        </div>
+                        <p>Espresso over ice with cold milk</p>
+                    </div>
+                </article>
+                <article class="product-item">
+                    <div class="product-thumb">
+                        <img src="https://images.unsplash.com/photo-1592663527359-cf6642f54cff?w=200&h=200&fit=crop" alt="Nitro Cold Brew">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-header">
+                            <h4>Nitro Cold Brew</h4>
+                            <span class="cost-display">$6.00</span>
+                        </div>
+                        <p>Creamy, cascading, on tap</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="area-footer">
+            <a href="#" class="ui-button ui-button-ghost">View Full Menu</a>
+        </div>
+    </div>
+</section>
+
+<section id="story" class="history-block">
+    <div class="container-box history-container">
+        <div class="history-visual">
+            <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=800&h=1000&fit=crop" alt="Barista pouring coffee">
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-value">15+</div>
+                    <div class="metric-name">Years Roasting</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">12</div>
+                    <div class="metric-name">Origin Countries</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">3</div>
+                    <div class="metric-name">Portland Locations</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">50k+</div>
+                    <div class="metric-name">Happy Customers</div>
+                </div>
+            </div>
+        </div>
+        <div class="history-text">
+            <span class="section-label">Est. 2009</span>
+            <h2>From Portland, With Love</h2>
+            <p>What started as a small cart at the Saturday Market has grown into three beloved locations
+                across Portland. But our mission remains the same: to source exceptional coffees, roast them with
+                care, and share them with our community.</p>
+            <p>Every bag we roast tells a story — of the farmers who grew it, the land that nurtured it,
+                and the hands that brought it to your cup. We believe coffee should be more than just caffeine; it
+                should be an experience.</p>
+            <a href="#" class="ui-button ui-button-solid">Learn More About Us</a>
+        </div>
+    </div>
+</section>
+
+<section id="process" class="workflow-area">
+    <div class="container-box">
+        <div class="area-header">
+            <h2>From Origin to Cup</h2>
+            <p class="area-description">Our commitment to quality at every step</p>
+        </div>
+
+        <div class="steps-track">
+            <div class="step-item">
+                <div class="step-content content-left">
+                    <h3>Sourcing</h3>
+                    <p>We partner directly with farmers across the coffee belt, ensuring fair prices and
+                        sustainable practices.</p>
+                </div>
+                <div class="step-indicator">
+                    <span class="step-label">Step 1</span>
+                    <span class="step-graphic">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="8.2" stroke="currentColor" stroke-width="1.6"/><path d="M12 3.8c2.4 2.4 3.6 5.3 3.6 8.2s-1.2 5.8-3.6 8.2c-2.4-2.4-3.6-5.3-3.6-8.2S9.6 6.2 12 3.8ZM4.2 9.6h15.6M4.2 14.4h15.6" stroke="currentColor" stroke-width="1.6"/></svg>
+                    </span>
+                </div>
+                <div class="step-content content-right"></div>
+            </div>
+
+            <div class="step-item">
+                <div class="step-content content-left"></div>
+                <div class="step-indicator">
+                    <span class="step-label">Step 2</span>
+                    <span class="step-graphic">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 21c3.4 0 6-2.4 6-5.8 0-2.7-1.6-4.3-2.6-6-.5.9-1.1 1.6-1.8 1.6-1.1 0-1-1.6-1-2.6 0-2.1-1.1-3.7-2.6-4.6.3 1.6-.4 2.9-1.4 4-1.4 1.5-2.6 3.1-2.6 5.6C6 18.6 8.6 21 12 21Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+                    </span>
+                </div>
+                <div class="step-content content-right">
+                    <h3>Roasting</h3>
+                    <p>Small-batch roasting in our Portland facility, where we develop each bean to its
+                        full potential.</p>
+                </div>
+            </div>
+
+            <div class="step-item">
+                <div class="step-content content-left">
+                    <h3>Cupping</h3>
+                    <p>Rigorous quality control through daily cupping sessions to ensure consistency and
+                        excellence.</p>
+                </div>
+                <div class="step-indicator">
+                    <span class="step-label">Step 3</span>
+                    <span class="step-graphic">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3v6.2M9 5.4l1.6 3.6M15 5.4l-1.6 3.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M5 11h14l-1.4 6.4A3 3 0 0 1 14.7 20H9.3a3 3 0 0 1-2.9-2.6L5 11Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+                    </span>
+                </div>
+                <div class="step-content content-right"></div>
+            </div>
+
+            <div class="step-item">
+                <div class="step-content content-left"></div>
+                <div class="step-indicator">
+                    <span class="step-label">Step 4</span>
+                    <span class="step-graphic">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 9h11v6a5 5 0 0 1-5 5H10a5 5 0 0 1-5-5V9Z" stroke="currentColor" stroke-width="1.6"/><path d="M16 10h1.5a2.5 2.5 0 0 1 0 5H16" stroke="currentColor" stroke-width="1.6"/></svg>
+                    </span>
+                </div>
+                <div class="step-content content-right">
+                    <h3>Serving</h3>
+                    <p>From our hands to yours, every cup is crafted with care by our trained baristas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="shop" class="shop-section">
+    <div class="container-box">
+        <div class="area-header">
+            <h2>Take It Home</h2>
+            <p class="area-description">Fresh-roasted beans delivered to your door</p>
+        </div>
+        <div class="shop-grid">
+            <div class="shop-card">
+                <div class="shop-card-media">
+                    <span class="badge badge-trending shop-badge">Bestseller</span>
+                    <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=600&h=600&fit=crop" alt="House Blend">
+                </div>
+                <div class="shop-card-body">
+                    <h3>House Blend</h3>
+                    <p>Our signature blend with notes of chocolate, caramel, and toasted nuts</p>
+                    <div class="shop-card-row">
+                        <div><span class="cost-display">$18.00</span><span class="price-unit"> / 12oz bag</span></div>
+                        <button class="ui-button btn-light btn-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="shop-card">
+                <div class="shop-card-media">
+                    <img src="https://images.unsplash.com/photo-1587734195503-904fca47e0e9?w=600&h=600&fit=crop" alt="Single Origin - Ethiopia">
+                </div>
+                <div class="shop-card-body">
+                    <h3>Single Origin - Ethiopia</h3>
+                    <p>Light roast with bright citrus and floral notes</p>
+                    <div class="shop-card-row">
+                        <div><span class="cost-display">$22.00</span><span class="price-unit"> / 12oz bag</span></div>
+                        <button class="ui-button btn-light btn-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="shop-card">
+                <div class="shop-card-media">
+                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=600&h=600&fit=crop" alt="Decaf Blend">
+                </div>
+                <div class="shop-card-body">
+                    <h3>Decaf Blend</h3>
+                    <p>All the flavor, none of the buzz</p>
+                    <div class="shop-card-row">
+                        <div><span class="cost-display">$19.00</span><span class="price-unit"> / 12oz bag</span></div>
+                        <button class="ui-button btn-light btn-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="area-footer">
+            <a href="#" class="ui-button ui-button-ghost btn-outline-light">Shop All Coffee →</a>
+        </div>
+    </div>
+</section>
+
+<section class="testimonial-section">
+  <div class="container-box">
+    <div class="area-header">
+      <h2>What People Are Saying</h2>
+      <p class="area-description">Join thousands of happy coffee lovers</p>
+    </div>
+
+    <div class="testimonial-grid">
+      <figure class="testimonial-card">
+        <div class="stars" aria-hidden="true">★★★★★</div>
+        <blockquote>
+          <p>"The best coffee I've ever had. Their Ethiopian pour-over is transcendent."</p>
+        </blockquote>
+        <figcaption>
+          <span class="avatar">M</span>
+          <span>
+            <span class="author-name">Michael Chen</span>
+            <span class="author-role">Coffee Enthusiast</span>
+          </span>
+        </figcaption>
+      </figure>
+
+      <figure class="testimonial-card">
+        <div class="stars" aria-hidden="true">★★★★★</div>
+        <blockquote>
+          <p>"Their subscription service changed my morning routine forever. Fresh roast right to my door!"</p>
+        </blockquote>
+        <figcaption>
+          <span class="avatar">S</span>
+          <span>
+            <span class="author-name">Sarah Jenkins</span>
+            <span class="author-role">Regular Customer</span>
+          </span>
+        </figcaption>
+      </figure>
+
+      <figure class="testimonial-card">
+        <div class="stars" aria-hidden="true">★★★★★</div>
+        <blockquote>
+          <p>"The atmosphere in their Portland cafe is unbeatable, and the baristas really know their craft."</p>
+        </blockquote>
+        <figcaption>
+          <span class="avatar">D</span>
+          <span>
+            <span class="author-name">David Miller</span>
+            <span class="author-role">Local Guide</span>
+          </span>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<footer class="main-footer">
+    <div class="container-box footer-upper">
+        <div class="footer-about">
+            <a href="/" class="brand-identity">
+                <span class="brand-icon">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M5 9h11v6a5 5 0 0 1-5 5H10a5 5 0 0 1-5-5V9Z" stroke="currentColor" stroke-width="1.6"/>
+                    <path d="M16 10h1.5a2.5 2.5 0 0 1 0 5H16" stroke="currentColor" stroke-width="1.6"/>
+                  </svg>
+                </span>
+                <span class="brand-title">Roast &amp; Co.</span>
+            </a>
+            <p>
+                Artisan coffee roasters dedicated to sourcing, roasting, and serving the finest specialty coffees
+                from around the world.
+            </p>
+            <div class="social-links">
+                <a href="#" aria-label="Instagram">Instagram</a>
+                <a href="#" aria-label="Twitter">X / Twitter</a>
+                <a href="#" aria-label="Facebook">Facebook</a>
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <div>
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="#">Espresso Drinks</a></li>
+                    <li><a href="#">Pour Overs</a></li>
+                    <li><a href="#">Cold Drinks</a></li>
+                    <li><a href="#">Pastries</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="#shop">Coffee Beans</a></li>
+                    <li><a href="#">Subscriptions</a></li>
+                    <li><a href="#">Merchandise</a></li>
+                    <li><a href="#">Gift Cards</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#story">Our Story</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-box footer-mid">
+        <div>
+            <h4>Hours</h4>
+            <p>Mon-Fri: 7am - 7pm</p>
+            <p>Sat-Sun: 8am - 6pm</p>
+        </div>
+        <div>
+            <h4>Contact</h4>
+            <p>hello@roastandco.com</p>
+            <p>(555) 234-5678</p>
+        </div>
+        <div>
+            <h4>Flagship Location</h4>
+            <p>123 Roastery Lane</p>
+            <p>Portland, OR 97201</p>
+        </div>
+    </div>
+
+    <div class="container-box footer-lower">
+        <p>© 2026 Roast &amp; Co. All rights reserved.</p>
+        <div class="legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html
